@@ -1,0 +1,869 @@
+/* Reset */
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   /* Gallery Styles */
+   .gallery {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       justify-content: center;
+   }
+   
+   .gallery-item {
+       flex: 1 1 calc(25% - 20px);
+       max-width: calc(25% - 20px);
+       text-align: center;
+       background-color: #f9f9f9;
+       border: 1px solid #ddd;
+       padding: 10px;
+       border-radius: 10px;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+   
+   .gallery-item img {
+       border-radius: 10px;
+       margin-bottom: 10px;
+       width: 100%;
+       transition: transform 0.3s ease;
+   }
+   
+   /* Hover effect */
+   .gallery-item:hover {
+       transform: scale(1.05); /* Perbesar seluruh item sedikit */
+       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Tambahkan bayangan */
+   }
+   
+   
+   /* Text styling */
+   .gallery-item p {
+       font-size: 14px;
+       margin: 5px 0;
+   }
+   
+   /* Global Styles */
+   body {
+       font-family: Arial, sans-serif;
+       color: #333;
+       background-color: #f9f9f9;
+   }
+   
+   a {
+       text-decoration: none;
+       color: inherit;
+   }
+   
+   img {
+       max-width: 100%;
+       height: auto;
+   }
+   
+   /* Header */
+   header {
+       background-color: #F1F0E8;
+       padding: 10px 20px;
+       border-bottom: 1px solid #ddd;
+   }
+   
+   .navbar {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .logo-container {
+       display: flex;
+       align-items: center;
+   }
+   
+   .logo-container .logo-img {
+       width: 40px;
+       height: 40px;
+       margin-right: 10px;
+       border-radius: 50%;
+   }
+   
+   .logo-container .logo-text {
+       font-size: 24px;
+       font-weight: bold;
+       color: #333;
+   }
+   
+   .navbar nav a {
+       margin: 0 15px;
+       font-size: 16px;
+       font-weight: 500;
+   }
+   
+   .navbar nav a.sale {
+       color: red;
+       font-weight: bold;
+   }
+   
+   .icons img {
+       width: 20px;
+       height: 20px;
+       margin: 20px;
+   }
+   
+   /* Main Section */
+   main {
+       text-align: center;
+       padding: 50px 20px;
+       background-color: #ffffff;
+   }
+   
+   .about-us h1 {
+       font-size: 32px;
+       margin-bottom: 20px;
+   }
+   
+   .about-us .logo-circle {
+       width: 120px;
+       height: 120px;
+       margin: 20px auto;
+       background-color: #F1F0E8;
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .about-us .logo-circle img {
+       width: 60%;
+       border-radius: 50%;
+   }
+   
+   .about-us blockquote {
+       font-size: 18px;
+       font-style: italic;
+       margin: 20px 0;
+       color: #555;
+   }
+   
+   .about-us p {
+       font-size: 16px;
+       color: #666;
+       margin: 10px 0;
+   }/* Reset */
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   /* Gallery Styles */
+   .gallery {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       justify-content: center;
+   }
+   
+   .gallery-item {
+       flex: 1 1 calc(25% - 20px);
+       max-width: calc(25% - 20px);
+       text-align: center;
+       background-color: #f9f9f9;
+       border: 1px solid #ddd;
+       padding: 10px;
+       border-radius: 10px;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+   
+   .gallery-item img {
+       border-radius: 10px;
+       margin-bottom: 10px;
+       width: 100%;
+       transition: transform 0.3s ease;
+   }
+   
+   /* Hover effect */
+   .gallery-item:hover {
+       transform: scale(1.05); /* Perbesar seluruh item sedikit */
+       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Tambahkan bayangan */
+   }
+   
+   
+   /* Text styling */
+   .gallery-item p {
+       font-size: 14px;
+       margin: 5px 0;
+   }
+   
+   /* Global Styles */
+   body {
+       font-family: Arial, sans-serif;
+       color: #333;
+       background-color: #f9f9f9;
+   }
+   
+   a {
+       text-decoration: none;
+       color: inherit;
+   }
+   
+   img {
+       max-width: 100%;
+       height: auto;
+   }
+   
+   /* Header */
+   header {
+       background-color: #F1F0E8;
+       padding: 10px 20px;
+       border-bottom: 1px solid #ddd;
+   }
+   
+   .navbar {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .logo-container {
+       display: flex;
+       align-items: center;
+   }
+   
+   .logo-container .logo-img {
+       width: 40px;
+       height: 40px;
+       margin-right: 10px;
+       border-radius: 50%;
+   }
+   
+   .logo-container .logo-text {
+       font-size: 24px;
+       font-weight: bold;
+       color: #333;
+   }
+   
+   .navbar nav a {
+       margin: 0 15px;
+       font-size: 16px;
+       font-weight: 500;
+   }
+   
+   .navbar nav a.sale {
+       color: red;
+       font-weight: bold;
+   }
+   
+   .icons img {
+       width: 20px;
+       height: 20px;
+       margin: 20px;
+   }
+   
+   /* Main Section */
+   main {
+       text-align: center;
+       padding: 50px 20px;
+       background-color: #ffffff;
+   }
+   
+   .about-us h1 {
+       font-size: 32px;
+       margin-bottom: 20px;
+   }
+   
+   .about-us .logo-circle {
+       width: 120px;
+       height: 120px;
+       margin: 20px auto;
+       background-color: #F1F0E8;
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .about-us .logo-circle img {
+       width: 60%;
+       border-radius: 50%;
+   }
+   
+   .about-us blockquote {
+       font-size: 18px;
+       font-style: italic;
+       margin: 20px 0;
+       color: #555;
+   }
+   
+   .about-us p {
+       font-size: 16px;
+       color: #666;
+       margin: 10px 0;
+   }
+   
+   /* Contact Us Section */
+   .contact-us {
+       text-align: center;
+       padding: 50px 20px;
+       background-color: #ffffff;
+   }
+   
+   .contact-us h1 {
+       font-size: 32px;
+       margin-bottom: 20px;
+       color: #555;
+       font-weight: bold;
+       letter-spacing: 2px;
+   }
+   
+   form {
+       max-width: 600px;
+       margin: 0 auto;
+   }
+   
+   .form-group {
+       margin-bottom: 20px;
+       text-align: left;
+   }
+   
+   form label {
+       display: block;
+       font-size: 14px;
+       color: #333;
+       margin-bottom: 5px;
+   }
+   
+   form input,
+   form textarea {
+       width: 100%;
+       padding: 10px;
+       border: 1px solid #ddd;
+       border-radius: 5px;
+       font-size: 14px;
+   }
+   
+   form .btn {
+       display: inline-block;
+       background-color: #217CA3;
+       color: #fff;
+       border: none;
+       padding: 10px 20px;
+       font-size: 16px;
+       font-weight: bold;
+       cursor: pointer;
+       border-radius: 5px;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       transition: background-color 0.3s;
+   }
+   
+   form .btn:hover {
+       background-color: #195E7B;
+   }
+   
+   /* Slider Section */
+   .slider {
+       position: relative;
+       width: 100%;
+       max-width: 1200px;
+       margin: 20px auto;
+       overflow: hidden;
+       text-align: center;
+   }
+   
+   .slider-img {
+       width: 30%;
+       height: auto;
+       border-radius: 20px;
+   }
+   
+   .slider-btn {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       background-color: rgba(0, 0, 0, 0.5);
+       color: white;
+       border: none;
+       font-size: 20px;
+       padding: 10px;
+       cursor: pointer;
+       border-radius: 50%;
+   }
+   
+   .prev-btn {
+       left: 10px;
+   }
+   
+   .next-btn {
+       right: 10px;
+   }
+   
+   .slider-btn:hover {
+       background-color: rgba(0, 0, 0, 0.7);
+   }
+   
+   /* Hot Items Section */
+   .hot-items {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .hot-items-header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 20px;
+   }
+   
+   .hot-items-header h2 {
+       font-size: 24px;
+       color: #333;
+   }
+   
+   .hot-items-header .view-all {
+       font-size: 14px;
+       color: #217CA3;
+       text-decoration: none;
+   }
+   
+   .item-container {
+       display: flex;
+       justify-content: center;
+       gap: 20px;
+   }
+   
+   .item img {
+       width: 200px;
+       height: 300px;
+       object-fit: cover;
+       border-radius: 10px;
+       transition: transform 0.3s;
+   }
+   
+   .item img:hover {
+       transform: scale(1.05);
+   }
+   
+   /* Footer */
+   footer {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       background-color: #F1F0E8;
+       padding: 20px 10px;
+       border-top: 1px solid #ddd;
+       text-align: center;
+   }
+   
+   footer div {
+       flex: 1;
+       padding: 0 10px;
+   }
+   /* Collection */
+   main {
+       text-align: center;
+       padding: 20px;
+       background-color: #ffffff;
+   }
+   
+   main h1 {
+       font-size: 24px;
+       margin-bottom: 20px;
+       font-weight: bold;
+       letter-spacing: 1px;
+   }
+   
+   /* Gallery Styles */
+   .gallery {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       justify-content: center;
+   }
+   
+   .gallery-item {
+       flex: 1 1 calc(25% - 20px);
+       max-width: calc(25% - 20px);
+       text-align: center;
+       background-color: #f9f9f9;
+       border: 1px solid #ddd;
+       padding: 10px;
+       border-radius: 10px;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   
+   .gallery-item img {
+       border-radius: 10px;
+       margin-bottom: 10px;
+   }
+   .item img:hover {
+       transform: scale(1.05);
+   }
+   
+   .gallery-item p {
+       font-size: 14px;
+       margin: 5px 0;
+   }
+   
+   /* Menambahkan gaya untuk stiker SALE */
+   .sale-sticker {
+       position: absolute;
+       top: 10px;
+       left: 10px;
+       background-color: red;
+       color: rgb(255, 255, 255);
+       padding: 5px 10px;
+       font-size: 14px;
+       font-weight: bold;
+       border-radius: 5px;
+   }
+   
+   /* Gaya untuk gambar di galeri */
+   .gallery-item {
+       position: relative; /* Menjadikan posisi relatif agar sale-sticker bisa diposisikan di dalamnya */
+       flex: 1 1 calc(25% - 20px);
+       max-width: calc(25% - 20px);
+       text-align: center;
+       background-color: #f9f9f9;
+       border: 1px solid #ddd;
+       padding: 10px;
+       border-radius: 10px;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   
+   .gallery-item img {
+       border-radius: 10px;
+       margin-bottom: 10px;
+       width: 100%;
+       height: auto;
+       transition: transform 0.3s ease-in-out;
+   }
+   /* Checkout */
+   .cart-modal {
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background: rgba(0, 0, 0, 0.5);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       z-index: 1000;
+   }
+   
+   .cart-container {
+       background: #fff;
+       padding: 20px;
+       width: 400px;
+       border-radius: 10px;
+       position: relative;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   }
+   
+   .close-btn {
+       position: absolute;
+       top: 10px;
+       right: 10px;
+       font-size: 24px;
+       background: transparent;
+       border: none;
+       cursor: pointer;
+   }
+   
+   .cart-item {
+       display: flex;
+       margin-bottom: 20px;
+   }
+   
+   .cart-item img {
+       width: 80px;
+       height: 80px;
+       object-fit: cover;
+       border-radius: 5px;
+       margin-right: 15px;
+   }
+   
+   .item-info {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   
+   .item-name {
+       font-size: 18px;
+       font-weight: bold;
+   }
+   
+   .item-price {
+       font-size: 16px;
+       color: #888;
+   }
+   
+   .quantity {
+       display: flex;
+       align-items: center;
+       margin-top: 10px;
+   }
+   
+   .quantity button {
+       background-color: #f5f5f5;
+       border: 1px solid #ddd;
+       padding: 5px 10px;
+       cursor: pointer;
+       font-size: 18px;
+   }
+   
+   .quantity-value {
+       margin: 0 10px;
+       font-size: 18px;
+   }
+   
+   .subtotal {
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 15px;
+   }
+   
+   .subtotal-amount {
+       font-size: 18px;
+       font-weight: bold;
+   }
+   
+   .order-notes {
+       width: 100%;
+       padding: 10px;
+       margin-bottom: 15px;
+       border-radius: 5px;
+       border: 1px solid #ddd;
+       font-size: 14px;
+       resize: vertical;
+   }
+   
+   .checkout-btn {
+       width: 100%;
+       padding: 10px;
+       background-color: #007bff;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       font-size: 16px;
+       cursor: pointer;
+   }
+   
+   .checkout-btn:hover {
+       background-color: #0056b3;
+   }
+   
+     /* Address Section */
+     .address {
+       margin-bottom: 20px;
+     }
+     
+     .address h3, .address p {
+       margin: 5px 0;
+       color: #f0e0d4;
+     }
+     
+     hr {
+       border: none;
+       border-top: 1px solid #f0e0d4;
+       margin: 20px 0;
+     }
+     
+     /* Product List */
+     .product {
+       margin-bottom: 20px;
+     }
+     
+     .product h3 {
+       margin-bottom: 10px;
+       color: #f0e0d4;
+     }
+     
+     .product-item {
+       display: flex;
+       align-items: center;
+       background-color: #F1F0E8; /* Warna latar produk */
+       padding: 10px;
+       border-radius: 5px;
+       margin-bottom: 10px;
+     }
+     
+     .product-item img {
+       width: 70px;
+       height: 70px;
+       border-radius: 5px;
+       object-fit: cover;
+       margin-right: 10px;
+     }
+     
+     .product-info h4, .product-info p {
+       margin: 0;
+       color: #f0e0d4;
+     }
+     
+     .product-quantity {
+       font-size: 14px;
+       color: #f0e0d4;
+     }
+     
+     /* Payment Methods */
+     .payment-methods {
+       display: flex;
+       justify-content: space-between;
+       margin: 20px 0;
+     }
+     
+     .payment-methods button {
+       flex: 1;
+       margin: 0 5px;
+       padding: 10px;
+       border: 1px solid #f0e0d4; /* Garis tombol */
+       background-color: #ffffff; /* Warna tombol default */
+       color: #f0e0d4; /* Warna teks tombol */
+       font-size: 14px;
+       cursor: pointer;
+       border-radius: 5px;
+       transition: all 0.3s ease;
+     }
+     
+     .payment-methods button.active {
+       background-color: #f0e0d4;
+       color: #333; /* Warna tombol aktif */
+     }
+     
+     .payment-methods button:hover {
+       background-color: #f0e0d4;
+       color: #333;
+     }
+     
+     /* Payment Summary */
+     .payment-summary p {
+       display: flex;
+       justify-content: space-between;
+       margin: 5px 0;
+       font-size: 14px;
+       color: #f0e0d4;
+     }
+     
+     .total {
+       font-size: 16px;
+       font-weight: bold;
+     }
+     
+     /* Checkout Button */
+     .checkout-button {
+       margin-top: 20px;
+       padding: 10px;
+       background-color: #f0e0d4;
+       color: #333;
+       border: none;
+       border-radius: 5px;
+       width: 100%;
+       cursor: pointer;
+       font-size: 16px;
+       transition: background-color 0.3s ease;
+     }
+     
+     .checkout-button:hover {
+       background-color: #fff;
+     }
+   
+   
+     .profile-container,
+   .cart-container,
+   .search-container {
+       max-width: 800px;
+       margin: 20px auto;
+       padding: 20px;
+       background: #fff;
+       border-radius: 5px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+       text-align: center;
+   }
+   
+   .profile-icon {
+       width: 100px;
+       border-radius: 50%;
+       margin-bottom: 10px;
+   }
+   
+   .cart-item {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 10px;
+       border-bottom: 1px solid #ddd;
+   }
+   
+   .cart-item img {
+       width: 80px;
+   }
+   
+   .item-details {
+       flex: 1;
+       margin-left: 10px;
+   }
+   
+   .search-container {
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       margin: 20px auto;
+   }
+   
+   .search-results {
+       margin-top: 20px;
+   }
+     
+   /* Bagian Footer - Sosial */
+   footer .social {
+       text-align: center;
+   }
+   
+   footer .social a {
+       display: inline-block; /* Untuk membuat elemen sejajar horizontal */
+       margin: 0 10px; /* Jarak antara ikon */
+       width: 24px; /* Ukuran ikon */
+       height: 24px;
+   }
+   
+   footer .social a img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover; /* Pastikan gambar proporsional */
+   }
+   
+   
+   footer a {
+       display: block;
+       margin: 5px 0;
+       font-size: 14px;
+       color: #333;
+   }
+   
+   /* Bagian Footer - Sosial */
+footer .social {
+       text-align: center;
+   }
+   
+   footer .social a {
+       display: inline-block; /* Untuk membuat elemen sejajar horizontal */
+       margin: 0 10px; /* Jarak antara ikon */
+       width: 24px; /* Ukuran ikon */
+       height: 24px;
+   }
+   
+   footer .social a img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover; /* Pastikan gambar proporsional */
+   }
+   
+   
+   footer a {
+       display: block;
+       margin: 5px 0;
+       font-size: 14px;
+       color: #333;
+   }
